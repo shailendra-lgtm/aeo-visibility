@@ -160,12 +160,12 @@ td.neg{color:#A8403E;font-weight:600} td.pos{color:#1176BC;font-weight:600}
 :root[data-theme="dark"] .ptag{color:#fff}
 /* filter bar */
 .filters{position:sticky;top:calc(52px + env(safe-area-inset-top,0px));z-index:19;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:0 2px 8px rgba(0,0,0,.06)}
-.filters .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;align-items:center;padding:10px 24px}
-.fgroup{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
-.fgroup .fl{font-size:12.5px;font-weight:600;color:var(--navy);margin-right:4px}
+.filters .wrap{display:flex;flex-wrap:wrap;gap:4px 24px;align-items:center;padding:5px 24px}
+.fgroup{display:flex;flex-wrap:wrap;align-items:center;gap:4px}
+.fgroup .fl{font-size:12px;font-weight:600;color:var(--navy);margin-right:4px}
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .fgroup .fl{color:#fff} }
 :root[data-theme="dark"] .fgroup .fl{color:#fff}
-.chip{font:inherit;font-size:12.5px;font-weight:500;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--canvas);color:var(--text);cursor:pointer}
+.chip{font:inherit;font-size:12px;font-weight:500;padding:3px 9px;border-radius:999px;border:1px solid var(--line);background:var(--canvas);color:var(--text);cursor:pointer}
 .chip.on{background:var(--blue);border-color:var(--blue);color:#fff}
 .chip.on.prod{background:var(--navy);border-color:var(--navy)}
 .chip:focus-visible{outline:2px solid var(--amber);outline-offset:1px}
@@ -225,7 +225,7 @@ td.neg{color:#A8403E;font-weight:600} td.pos{color:#1176BC;font-weight:600}
 <div class="filters"><div class="wrap">
 <div class="fgroup" id="f-cat"><span class="fl">Prompt category</span></div>
 <div class="fgroup" id="f-prod"><span class="fl">Product relevance</span></div>
-<div class="fstat" id="fstat"></div>
+<div class="fstat" id="fstat" hidden></div>
 </div></div>
 
 <header class="hero" id="top"><div class="wrap">
